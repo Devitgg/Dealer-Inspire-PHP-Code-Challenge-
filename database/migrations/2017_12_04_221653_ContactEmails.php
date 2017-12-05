@@ -17,7 +17,7 @@ class ContactEmails extends Migration
              $table->increments('id');
              $table->string('name');
              $table->string('email');
-             $table->string('phone_number')->nullable();
+             $table->integer('phone_number')->nullable();
              $table->longText('content');
              $table->timestamps();
          });
