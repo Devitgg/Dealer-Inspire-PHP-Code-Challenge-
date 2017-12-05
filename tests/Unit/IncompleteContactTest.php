@@ -10,6 +10,7 @@ class IncompleteContactTest extends TestCase {
     use WithoutMiddleware;
 
     public function testMissingName(){
+
       //send a contact request to the route
       $response = $this->post(route('contactGuy'), [
           'email'   => 'hanzo@main.com',
@@ -28,6 +29,7 @@ class IncompleteContactTest extends TestCase {
 
 
     public function testMissingEmail(){
+
       //send a contact request to the route
       $response = $this->post(route('contactGuy'), [
           'name'     => 'Joe Smoothy',
@@ -46,6 +48,7 @@ class IncompleteContactTest extends TestCase {
 
 
     public function testMissingContent(){
+      
       //send a contact request to the route
       $response = $this->post(route('contactGuy'), [
           'name'    => 'Joe Smoothy',
