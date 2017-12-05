@@ -13,8 +13,8 @@ Welcome to the Dealer Inspire PHP Code challenge.
 
 ## Important Notes
 
-- If you run this without `Mailtrap.io` or migrating the Database -- it `will` have a mental break.
-> If you do not want to add `Mailtrap.io` do the following
+- If you run this without `Mailtrap.io` or migrating the Database -- it **`will`** have a mental break.
+- **If you do not want to add `Mailtrap.io` do the following**
 - Go to `App/Http/Controllers/ContactGuy.php`
 - Comment out the following line.
 > Line 27: Mail::to($guySmiley)->send(new contactGuyMailer($request));
