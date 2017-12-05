@@ -29,6 +29,7 @@ CREATE USER 'someone'@'localhost' IDENTIFIED BY 'someone';
 CREATE DATABASE `dealerinspire`;
 GRANT ALL PRIVILEGES ON dealerinspire.* TO 'someone'@'localhost';
 ```
+- Remove `.example` from `.env.example`
 - Add the username and database to your `.env` file
 ```
 DB_DATABASE=dealerinspire
